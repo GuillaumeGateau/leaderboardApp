@@ -1,42 +1,56 @@
-<html t:type="layout" title="leaderboardApp Index"
+<html t:type="layout" title="raceZers - do you even lift?"
       t:sidebarTitle="Framework Version"
       xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
       xmlns:p="tapestry:parameter">
         <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
 
-    <p>${message:greeting}</p>
+    <body>
+    	<header>
+    		<span>Welcome to the Leaderboard</span>
+    	</header>
 
-    <p>The current time is: <strong>${currentTime}</strong></p>
+    	<main>
+    		<section>
+    			<table id="leaderboard">
+    				<colgroup>
+    					<col width="2*"/>
+    					<col width="1*"/>
+    					<col width="1*"/>
+    				</colgroup>
 
-    <!-- A Zone is a component that can be updated in place, triggered by other components. -->
-    <t:zone t:id="zone">
-        <p>
-            You have clicked the link <strong>${clickCount}</strong> times.
-        </p>
+    				<thead>
+    					<tr>
+    						<th>Name</th>
+    						<th>Rank</th>
+    						<th>Score</th>
+    					</tr>
+    				</thead>
 
-        <p>
-            [
-            <t:actionlink t:id="increment">increment</t:actionlink>
-            ]
-            &nbsp;
-            [
-            <t:actionlink t:id="incrementAjax" zone="^">increment (via Ajax)</t:actionlink>
-            ]
-        </p>
-
-    </t:zone>
-
-    <p:sidebar>
-        <p>
-            You are running Tapestry version <strong>${tapestryVersion}</strong>.
-        </p>
-
-
-        <p>
-            [
-            <t:pagelink page="Index">refresh page</t:pagelink>
-            ]
-        </p>
-    </p:sidebar>
-
-</html>
+    				<tbody>
+    					<tr>
+    						<td>Josh Ritter</td>
+    						<td>1st</td>
+    						<td>4,333</td>
+    					</tr>
+    					<tr class="even">
+    						<td>Chester Millisock</td>
+    						<td>2st</td>
+    						<td>3,233</td>
+    					</tr>
+    					<tr>
+                            <td>Chester Millisock</td>
+                            <td>2st</td>
+                            <td>3,233</td>
+                        </tr>
+                        <tr class="even">
+    						<td>Chester Millisock</td>
+    						<td>2st</td>
+    						<td>3,233</td>
+    					</tr>
+    				</tbody>
+    			</table>
+    		</section>
+    	</main>
+    	<footer>We have <span id="numCompetitors"></span> competitors</footer>
+    </body>
+    </html>

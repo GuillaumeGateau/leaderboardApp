@@ -17,6 +17,7 @@ public class Index
     @Symbol(SymbolConstants.TAPESTRY_VERSION)
     private String tapestryVersion;
 
+
     @InjectComponent
     private Zone zone;
 
@@ -26,6 +27,7 @@ public class Index
 
     @Inject
     private AlertManager alertManager;
+
 
     public Date getCurrentTime()
     {
