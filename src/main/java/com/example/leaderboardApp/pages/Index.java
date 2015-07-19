@@ -18,7 +18,7 @@ public class Index
     private String tapestryVersion;
 
 
-    @InjectComponent
+    /*@InjectComponent
     private Zone zone;
 
     @Persist
@@ -48,5 +48,5 @@ public class Index
         alertManager.info("Increment (via Ajax) clicked");
 
         return zone;
-    }
+    }*/
 }

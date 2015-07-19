@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8ad04b2-09ba-49c5-b286-8faedc230d9d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/example/leaderboardApp/components/Competitor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/example/leaderboardApp/components/Handler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/example/leaderboardApp/components/Competitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/example/leaderboardApp/components/Handler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/leaderboardApp/pages/Index.class" afterPath="$PROJECT_DIR$/target/classes/com/example/leaderboardApp/pages/Index.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/leaderboardApp/pages/Index.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/leaderboardApp/pages/Index.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/example/leaderboardApp/pages/Index.tml" afterPath="$PROJECT_DIR$/src/main/resources/com/example/leaderboardApp/pages/Index.tml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/example/leaderboardApp/components/Layout.tml" afterPath="$PROJECT_DIR$/src/main/resources/com/example/leaderboardApp/components/Layout.tml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/leaderboardApp/components/Layout.tml" afterPath="$PROJECT_DIR$/target/classes/com/example/leaderboardApp/components/Layout.tml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/layout/layout.css" afterPath="$PROJECT_DIR$/src/main/webapp/layout/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-    </list>
+    <list default="true" id="b8ad04b2-09ba-49c5-b286-8faedc230d9d" name="Default" comment="" />
     <ignored path="leaderboardApp.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
