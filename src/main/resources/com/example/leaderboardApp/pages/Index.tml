@@ -5,52 +5,15 @@
         <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
 
     <body>
-    	<header>
-    		<span>Welcome to the Leaderboard</span>
-    	</header>
 
     	<main>
-    		<section>
-    			<table id="leaderboard">
-    				<colgroup>
-    					<col width="2*"/>
-    					<col width="1*"/>
-    					<col width="1*"/>
-    				</colgroup>
-
-    				<thead>
-    					<tr>
-    						<th>Name</th>
-    						<th>Rank</th>
-    						<th>Score</th>
-    					</tr>
-    				</thead>
-
-    				<tbody>
-    					<tr>
-    						<td>Josh Ritter</td>
-    						<td>1st</td>
-    						<td>4,333</td>
-    					</tr>
-    					<tr class="even">
-    						<td>Chester Millisock</td>
-    						<td>2st</td>
-    						<td>3,233</td>
-    					</tr>
-    					<tr>
-                            <td>Chester Millisock</td>
-                            <td>2st</td>
-                            <td>3,233</td>
-                        </tr>
-                        <tr class="even">
-    						<td>Chester Millisock</td>
-    						<td>2st</td>
-    						<td>3,233</td>
-    					</tr>
-    				</tbody>
-    			</table>
+    		<section class="floater">
+                <t:grid t:source="competitors" row="competitor" exclude="hipchat_id">
+                    <p:empty>
+                      <p>There are no users to display</p>
+                    </p:empty>
+                </t:grid>
     		</section>
     	</main>
-    	<footer>We have <span id="numCompetitors"></span> competitors</footer>
     </body>
     </html>

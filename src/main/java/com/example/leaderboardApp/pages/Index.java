@@ -1,52 +1,23 @@
 package com.example.leaderboardApp.pages;
 
-import java.util.Date;
-import org.apache.tapestry5.annotations.*;
-import org.apache.tapestry5.ioc.annotations.*;
-import org.apache.tapestry5.corelib.components.*;
-import org.apache.tapestry5.SymbolConstants;
-import org.apache.tapestry5.alerts.AlertManager;
+import java.util.*;
 
-/**
- * Start page of application leaderboardApp.
- */
-public class Index
-{
+import com.example.leaderboardApp.utility.Competitor;
+import org.apache.tapestry5.ioc.annotations.Inject;
+import org.hibernate.Session;
+import org.apache.tapestry5.annotations.Property;
+
+
+
+public class Index {
     @Property
-    @Inject
-    @Symbol(SymbolConstants.TAPESTRY_VERSION)
-    private String tapestryVersion;
-
-
-    /*@InjectComponent
-    private Zone zone;
-
-    @Persist
-    @Property
-    private int clickCount;
+    private Competitor competitor;
 
     @Inject
-    private AlertManager alertManager;
-
-
-    public Date getCurrentTime()
+    private Session session;
+    public Collection<Competitor> getCompetitors()
     {
-        return new Date();
+        return session.createCriteria(Competitor.class).list();
     }
 
-    void onActionFromIncrement()
-    {
-        alertManager.info("Increment clicked");
-
-        clickCount++;
-    }
-
-    Object onActionFromIncrementAjax()
-    {
-        clickCount++;
-
-        alertManager.info("Increment (via Ajax) clicked");
-
-        return zone;
-    }*/
 }

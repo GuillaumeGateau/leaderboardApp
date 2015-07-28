@@ -4,59 +4,32 @@
       xmlns:p="tapestry:parameter">
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-        <title>Welcome to the app</title>
+        <title>Leaderboard App</title>
+        <link rel="shortcut icon" href="images/favicon.ico"/>
     </head>
     <body>
+
         <!-- start header -->
         <div class="header">
             <div class="logo">
                 <h1>
-                    <t:pagelink page="index">Welcome to the App</t:pagelink>
-                    &nbsp;
-                    version ${appVersion}
+                    Dipping Rainier: do you even lift?
                 </h1>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li t:type="loop" source="pageNames" value="pageName" class="prop:classForPageName">
-                        <t:pagelink page="prop:pageName">${pageName}</t:pagelink>
-                    </li>
-                </ul>
             </div>
         </div>
         <!-- end header -->
+
         <!-- start page -->
         <div class="page">
-            <!-- start sidebar -->
-            <div class="sidebar">
-                <ul>
-                    <li class="search" style="background: none;">
-                    </li>
-                    <li>
-                        <t:alerts/>
-                    </li>
-                    <li t:type="if" test="sidebar">
-                        <h2>${sidebarTitle}</h2>
 
-                        <div class="sidebar-content">
-                            <t:delegate to="sidebar"/>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!-- end sidebar -->
             <!-- start content -->
             <div class="content">
-                <div class="post">
-                    <div class="title">
-                        <h2>${title}</h2>
-                    </div>
                     <div class="entry">
                         <t:body/>
                     </div>
-                </div>
             </div>
             <!-- end content -->
+
             <br style="clear: both;"/>
         </div>
     </body>

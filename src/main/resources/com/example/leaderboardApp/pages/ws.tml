@@ -1,0 +1,15 @@
+<html t:type="layout" title="raceZers - do you even lift?"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+<body>
+<section class="floater"></section>
+<section>
+</section>
+</body>
+
+
+
+</html>

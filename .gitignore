@@ -1,0 +1,17 @@
+*.classpath
+*.settings/
+*.project
+*.iml
+*.ipr
+*.iws
+*.idea/
+*~
+.*.swp
+*/target/*
+target/*
+*/test_config/*
+test_config/*
+*/cobertura.xml
+*.eml
+.idea
+resources/links/*

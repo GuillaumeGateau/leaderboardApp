@@ -12,11 +12,18 @@
              need to add Hibernate configuration files, such as hibernate.cfg.xml. -->
         <dependency>
             <groupId>org.apache.tapestry</groupId>
-            <artifactId>tapestry-core</artifactId>
+            <artifactId>tapestry-hibernate</artifactId>
             <version>${tapestry-release-version}</version>
         </dependency>
 
-        <!-- This adds automatic compression of JavaScript and CSS when in production mode. -->
+         <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>1.0.2</version>
+         </dependency>
+
+
+            <!-- This adds automatic compression of JavaScript and CSS when in production mode. -->
         <dependency>
             <groupId>org.apache.tapestry</groupId>
             <artifactId>tapestry-yuicompressor</artifactId>
@@ -74,7 +81,14 @@ of testing facilities designed for use with TestNG (http://testng.org/), so it's
             <scope>provided</scope>
         </dependency>
 
-    </dependencies>
+            <!-- MySql 5.5 Connector -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>5.1.32</version>
+            </dependency>
+
+        </dependencies>
     <build>
         <finalName>leaderboardApp</finalName>
         <plugins>
